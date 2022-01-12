@@ -13,27 +13,6 @@ const initialState = [
   },
 ];
 
-// const appReducer = (state, action) => {
-//   switch (action.type) {
-//     case "ADD_TRANSACTION":
-//       return [
-//         ...state,
-//         {
-//           id: state.length + 1,
-//           text: action.payload.text,
-//           amount: action.payload.amount,
-//         },
-//       ];
-//     case "DELETE_TRANSACTION":
-//       return state.filter((val) => {
-//         return val.id !== action.payload.id;
-//       });
-
-//     default:
-//       return state;
-//   }
-// };
-
 export const GlobalContext = createContext(initialState);
 
 export function GlobalProvider({children}) {
